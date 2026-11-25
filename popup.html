@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>掘金评论爬取工具</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1>掘金评论爬取工具</h1>
+    <p>该扩展在掘金文章页面右下角添加控制面板</p>
+    <p>支持掘金文章页面的评论爬取</p>
+    <div class="features">
+      <h2>功能特点：</h2>
+      <ul>
+        <li>实时显示爬取进度</li>
+        <li>每100条评论暂停5秒避免封禁</li>
+        <li>自动生成 CSV 和 HTML 文件并下载</li>
+        <li>支持二级评论（回复）爬取</li>
+        <li>面板样式与原文章隔离，不影响阅读</li>
+        <li>自动识别文章页面</li>
+      </ul>
+    </div>
+    <div class="instructions">
+      <h2>使用说明：</h2>
+      <ol>
+        <li>打开掘金文章页面</li>
+        <li>页面右下角会出现控制面板</li>
+        <li>点击"开始爬取"按钮开始爬取评论</li>
+        <li>爬取完成后自动下载 CSV 和 HTML 文件，无需再次点击</li>
+        <li>面板可以折叠/展开</li>
+      </ol>
+    </div>
+    <div class="author">
+      <p>Created by Kilo</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

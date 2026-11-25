@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "一键获取掘金评论",
+  "version": "2.2",
+  "description": "一键获取掘金文章评论爬取工具【完全免费】",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "downloads",
+    "cookies",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.juejin.cn/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://juejin.cn/post/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_icon": "icons/icon48.png",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": []
+}
